@@ -822,7 +822,7 @@ section,
   background-color: transparent;
   border: 0;
   padding: 4px 10px;
-  width: 100%;
+  width: 70%;
 }
 
 .hero .sign-up-form input[type=email]:focus-visible {
