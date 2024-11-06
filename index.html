@@ -35,7 +35,38 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
-
+<style>
+  @media (max-width: 768px) {
+  .section-title h2 {
+    font-size: 20px; /* Ubah ukuran sesuai kebutuhan */
+  }
+}
+.background-image {
+        /* background-image: url('assets/img/gambar_dara/gambar-4.jpg');  */
+        /* Ganti dengan path gambar Anda */
+        background-size: cover; /* Atur ukuran gambar agar memenuhi area */
+        background-position: center; /* Posisikan gambar di tengah */
+        color: white; /* Ubah warna teks jika perlu untuk kontras */
+    }
+    .background-image-pt {
+        background-image: url('assets/img/gambar_dara/gamabr-1.jpg'); /* Ganti dengan path gambar Anda */
+        background-size: cover; /* Atur ukuran gambar agar memenuhi area */
+        background-position: center; /* Posisikan gambar di tengah */
+        color: white; /* Ubah warna teks jika perlu untuk kontras */
+    }
+    .background-image-kartu-perdana {
+        background-image: url('assets/img/gambar_dara/gambar-3.jpg'); /* Ganti dengan path gambar Anda */
+        background-size: cover; /* Atur ukuran gambar agar memenuhi area */
+        background-position: center; /* Posisikan gambar di tengah */
+        color: white; /* Ubah warna teks jika perlu untuk kontras */
+    }
+    .background-image-produk {
+        background-image: url('assets/img/gambar_dara/gambar-4.jpg'); /* Ganti dengan path gambar Anda */
+        background-size: cover; /* Atur ukuran gambar agar memenuhi area */
+        background-position: center; /* Posisikan gambar di tengah */
+        color: white; /* Ubah warna teks jika perlu untuk kontras */
+    }
+</style>
 <body class="index-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
@@ -52,11 +83,11 @@
           <li><a href="index.html#hero" class="active">Home</a></li>
           <li><a href="index.html#about">About us</a></li>
           <li><a href="blog.html">pulzx</a></li>
-          <li><a href="">Kartu & Voucher</a></li>
+          <li><a href="kartu_voucher.html">Kartu & Voucher</a></li>
           <li><a href="products.html">Product</a></li>
 
           <li><a href="">Store</a></li>
-          <li><a href="">Kritik Saran</a></li>
+          <li><a href="index.html#contact">Kritik Saran</a></li>
 
 
           <!-- <li><a href="index.html#portfolio">Portfolio</a></li> -->
@@ -117,7 +148,6 @@
           </div>
         </div>
       </div>
-
     </section><!-- /Hero Section -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-xl">
@@ -209,38 +239,49 @@
             <div class="row gy-4 icon-boxes">
 
               <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-                <div class="icon-box">
-                  <img src="assets/img/gambar_dara/pikom senyum.jpg" alt="Deskripsi Gambar" style="width: 100px; height: 70px;"> <!-- Ganti dengan path gambar yang diinginkan -->
-
+                <div class="icon-box background-image" >
+                  <!-- <i class="bi bi-clipboard-pulse"></i> -->
+                  <div class="jarak">
+                    
+                  </div>
 
                   <h3><a href="blog.html" style="color: black;">Pulzx</a></h3>
                   
-                  <p>Magni repellendus vel ullam hic officia accusantium ipsa dolor omnis dolor voluptatem</p>
+                  <!-- <p>Magni repellendus vel ullam hic officia accusantium ipsa dolor omnis dolor voluptatem</p> -->
                 </div>
               </div> <!-- End Icon Box -->
 
               <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-                <div class="icon-box">
-                  <i class="bi bi-clipboard-pulse"></i>
+                <div class="icon-box background-image-kartu-perdana">
+                  <!-- <i class="bi bi-clipboard-pulse"></i> -->
+                  <div class="jarak">
+                    
+                  </div>
                   <h3>Kartu Perdana & Voucher</h3>
-                  <p>Autem saepe animi et aut aspernatur culpa facere. Rerum saepe rerum voluptates quia</p>
+                  <!-- <p>Autem saepe animi et aut aspernatur culpa facere. Rerum saepe rerum voluptates quia</p> -->
                 </div>
               </div> <!-- End Icon Box -->
 
               <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
-                <div class="icon-box">
-                  <i class="bi bi-command"></i>
+                <div class="icon-box background-image-pt">
+                  <!-- <i class="bi bi-command"></i> -->
+                  <div class="jarak">
+                    
+                  </div>
                   <h3>PT Mega Pixel Mandiri</h3>
-                  <p>Omnis perferendis molestias culpa sed. Recusandae quas possimus. Quod consequatur corrupti</p>
+                  <!-- <p>Omnis perferendis molestias culpa sed. Recusandae quas possimus. Quod consequatur corrupti</p> -->
                 </div>
               </div> <!-- End Icon Box -->
 
               <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
-                <div class="icon-box">
-                  <i class="bi bi-graph-up-arrow"></i>
+                <div class="icon-box background-image-produk">
+                  <!-- <i class="bi bi-graph-up-arrow"></i> -->
+                  <div class="jarak">
+                    
+                  </div>
                   <h3><a href="products.html" style="color: black;">Produk</a></h3>
 
-                  <p>Sint et dolor voluptas minus possimus nostrum. Reiciendis commodi eligendi omnis quideme lorenda</p>
+                  <!-- <p>Sint et dolor voluptas minus possimus nostrum. Reiciendis commodi eligendi omnis quideme lorenda</p> -->
                 </div>
               </div> <!-- End Icon Box -->
 
