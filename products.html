@@ -93,15 +93,25 @@
   </header>
 
   <main class="main">
-
+    <style>
+      .hover-text {
+        color: color-mix(in srgb, var(--accent-color), transparent 15%);
+        font-size: 18px;
+        background-color: rgba(255, 255, 255, 0.992); /* Latar belakang transparan */
+        padding: 2px 6px; /* Padding lebih kecil untuk latar belakang lebih rapat */
+        border-radius: 5px;
+      }
+    </style>
+    
     <!-- Page Title -->
     <div class="page-title" data-aos="fade">
       <div class="heading-produk">
         <div class="container">
-            <div class="container section-title" data-aos="fade-up">
-                <h2>Produk</h2>
-                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-              </div>
+          <div class="container section-title hover-text" data-aos="fade-up">
+            <h2 style="color: color-mix(in srgb, var(--accent-color), transparent 15%);">Produk</h2>
+            <p style="color: color-mix(in srgb, var(--accent-color), transparent 15%);">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        </div>
+        
         </div>
       </div>
       <nav class="breadcrumbs">
