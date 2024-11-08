@@ -670,9 +670,31 @@ h6 {
 }
 
 .page-title .heading {
-  padding: 80px 0;
+  padding: 100px 0;
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  background-image: url('../../assets/img/gambar_dara/gamabr-1.jpg'); /* Ganti dengan path gambar yang sesuai */
+  background-size: cover; /* Agar gambar menutupi seluruh area */
+  background-position: center; /* Menempatkan gambar di tengah */
+  background-repeat: no-repeat; /* Menghindari gambar diulang */
 }
+
+.page-title .heading-kartu-voucher {
+  padding: 100px 0;
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  background-image: url('../../assets/img/gambar_dara/gambar-3.jpg'); /* Ganti dengan path gambar yang sesuai */
+  background-size: cover; /* Agar gambar menutupi seluruh area */
+  background-position: center; /* Menempatkan gambar di tengah */
+  background-repeat: no-repeat; /* Menghindari gambar diulang */
+}
+.page-title .heading-produk {
+  padding: 100px 0;
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  background-image: url('../../assets/img/gambar_dara/gambar-4.jpg'); /* Ganti dengan path gambar yang sesuai */
+  background-size: cover; /* Agar gambar menutupi seluruh area */
+  background-position: center; /* Menempatkan gambar di tengah */
+  background-repeat: no-repeat; /* Menghindari gambar diulang */
+}
+
 
 .page-title .heading h1 {
   font-size: 38px;
