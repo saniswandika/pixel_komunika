@@ -41,15 +41,16 @@
     font-size: 20px; /* Ubah ukuran sesuai kebutuhan */
   }
 }
-.background-image {
+    .background-image {
         /* background-image: url('assets/img/gambar_dara/gambar-4.jpg');  */
         /* Ganti dengan path gambar Anda */
+        background-image: url('assets/img/gambar_dara/gamabr-1.jpg'); /* Ganti dengan path gambar Anda */
         background-size: cover; /* Atur ukuran gambar agar memenuhi area */
         background-position: center; /* Posisikan gambar di tengah */
         color: white; /* Ubah warna teks jika perlu untuk kontras */
     }
     .background-image-pt {
-        background-image: url('assets/img/gambar_dara/gamabr-1.jpg'); /* Ganti dengan path gambar Anda */
+        background-image: url('assets/img/gambar_dara/legalitas.jpg'); /* Ganti dengan path gambar Anda */
         background-size: cover; /* Atur ukuran gambar agar memenuhi area */
         background-position: center; /* Posisikan gambar di tengah */
         color: white; /* Ubah warna teks jika perlu untuk kontras */
@@ -66,6 +67,47 @@
         background-position: center; /* Posisikan gambar di tengah */
         color: white; /* Ubah warna teks jika perlu untuk kontras */
     }
+    /* Pastikan elemen .icon-box memiliki posisi relatif untuk memungkinkan posisi absolut pada elemen anak */
+   /* Dasar untuk .icon-box */
+.icon-box {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer; /* Menunjukkan elemen bisa di-klik atau dihover */
+}
+
+/* Teks default */
+.hover-text {
+  opacity: 0; /* Teks disembunyikan pada awalnya */
+  transition: opacity 0.3s ease; /* Efek transisi saat teks muncul */
+  position: absolute;
+  bottom: 10px; /* Menempatkan teks di bagian bawah icon-box */
+  left: 10px;
+  color: white;
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.992); /* Latar belakang transparan agar teks lebih jelas */
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Desktop: Hover efek */
+.icon-box:hover .hover-text {
+  opacity: 1; /* Teks muncul saat hover */
+}
+
+/* Mobile: Gunakan :active untuk efek sentuhan (tap) */
+@media (max-width: 768px) {
+  /* Menghilangkan efek hover di mobile */
+  .icon-box:hover .hover-text {
+    opacity: 0; /* Tidak ada efek hover di mobile */
+  }
+  
+  /* Menampilkan teks saat elemen ditekan (tap) */
+  .icon-box:active .hover-text {
+    opacity: 1; /* Teks muncul saat elemen ditekan */
+  }
+}
+
+
 </style>
 <body class="index-page">
 
@@ -239,47 +281,47 @@
             <div class="row gy-4 icon-boxes">
 
               <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-                <div class="icon-box background-image" >
+                <div class="icon-box background-image" onclick="toggleText(this)">
                   <!-- <i class="bi bi-clipboard-pulse"></i> -->
                   <div class="jarak">
                     
                   </div>
 
-                  <h3><a href="blog.html" style="color: black;">Pulzx</a></h3>
+                  <h3 class="hover-text"><a href="blog.html">Pulzx</a></h3>
                   
                   <!-- <p>Magni repellendus vel ullam hic officia accusantium ipsa dolor omnis dolor voluptatem</p> -->
                 </div>
               </div> <!-- End Icon Box -->
 
               <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-                <div class="icon-box background-image-kartu-perdana">
+                <div class="icon-box background-image-kartu-perdana" onclick="toggleText(this)">
                   <!-- <i class="bi bi-clipboard-pulse"></i> -->
                   <div class="jarak">
                     
                   </div>
-                  <h3>Kartu Perdana & Voucher</h3>
+                  <h3 class="hover-text"> <a href="">Kartu Perdana & Voucher</a></h3>
                   <!-- <p>Autem saepe animi et aut aspernatur culpa facere. Rerum saepe rerum voluptates quia</p> -->
                 </div>
               </div> <!-- End Icon Box -->
-
               <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
-                <div class="icon-box background-image-pt">
-                  <!-- <i class="bi bi-command"></i> -->
-                  <div class="jarak">
-                    
-                  </div>
-                  <h3>PT Mega Pixel Mandiri</h3>
-                  <!-- <p>Omnis perferendis molestias culpa sed. Recusandae quas possimus. Quod consequatur corrupti</p> -->
+                <div class="icon-box background-image-pt" onclick="toggleText(this)">
+                  <div class="jarak"></div>
+                  <h3 class="hover-text"> <a href="">PT Mega Pixel Mandiri</a></h3>
                 </div>
-              </div> <!-- End Icon Box -->
+              </div> 
+              <!-- End Icon Box -->
+              
+            
+              
+              
 
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
-                <div class="icon-box background-image-produk">
+              <div class="col-md-6 mt-4" data-aos="fade-up" data-aos-delay="500">
+                <div class="icon-box background-image-produk" onclick="toggleText(this)">
                   <!-- <i class="bi bi-graph-up-arrow"></i> -->
                   <div class="jarak">
                     
                   </div>
-                  <h3><a href="products.html" style="color: black;">Produk</a></h3>
+                  <h3 class="hover-text"><a href="products.html">Produk</a></h3>
 
                   <!-- <p>Sint et dolor voluptas minus possimus nostrum. Reiciendis commodi eligendi omnis quideme lorenda</p> -->
                 </div>
@@ -477,7 +519,12 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script>
+    function toggleText(element) {
+      var text = element.querySelector('.hover-text');
+      text.style.opacity = (text.style.opacity == 1) ? 0 : 1; // Toggle visibility of text
+    }
+  </script>
 </body>
 
 </html>
